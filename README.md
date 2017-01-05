@@ -12,5 +12,6 @@ I use an Ubuntu 64-bit virtual machine, targeting the x86 architecture. I have a
 ```
 assemble() {
 	nasm -f elf64 $1.asm && gcc $1.o -o $1.out && echo "Assembled to "$1".out!"
-}```
+}
+```
 So, for example, I can just run `assemble quickSort`, which will assemble "quickSort.asm" into "quickSort.out", which can then be executed.
